@@ -6,21 +6,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #101820;
-    color: #f2f5f7;
+    background: #100D1C;
+    color: #f2f0f7;
     line-height: 1.6;
 }
 
 header {
-    background: #172b3a;
+    background: #24143D;
     text-align: center;
     padding: 28px 15px;
-    border-bottom: 3px solid #00d8ff;
+    border-bottom: 3px solid #C084FC;
 }
 
 header h1 {
     margin: 0;
-    color: #00d8ff;
+    color: #D8B4FE;
 }
 
 header p {
@@ -38,14 +38,14 @@ section {
 }
 
 .introducao, .cartao, .conteudo {
-    background: #1b2a36;
+    background: #2B2040;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #304654;
+    border: 1px solid #49315F;
 }
 
 h2 {
-    color: #00d8ff;
+    color: #D8B4FE;
     margin-top: 0;
 }
 
@@ -62,8 +62,8 @@ h2 {
 
 .botao, .voltar {
     display: inline-block;
-    background: #00d8ff;
-    color: #101820;
+    background: #C084FC;
+    color: #190F26;
     padding: 10px 14px;
     border-radius: 6px;
     text-decoration: none;
@@ -71,11 +71,11 @@ h2 {
 }
 
 .botao:hover, .voltar:hover {
-    background: #8beeff;
+    background: #D8B4FE;
 }
 
 a {
-    color: #8beeff;
+    color: #D8B4FE;
 }
 
 .voltar {
@@ -88,16 +88,16 @@ a {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    background: #101820;
+    background: #100D1C;
     padding: 15px;
     min-height: 150px;
-    border: 1px dashed #8beeff;
+    border: 1px dashed #C084FC;
     border-radius: 8px;
 }
 
 .caixa {
-    background: #00d8ff;
-    color: #101820;
+    background: #C084FC;
+    color: #190F26;
     width: 75px;
     height: 65px;
     display: flex;
@@ -111,15 +111,15 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    background: #101820;
+    background: #100D1C;
     padding: 15px;
-    border: 1px dashed #8beeff;
+    border: 1px dashed #C084FC;
     border-radius: 8px;
 }
 
 .item-grid {
-    background: #00d8ff;
-    color: #101820;
+    background: #C084FC;
+    color: #190F26;
     text-align: center;
     padding: 20px 5px;
     border-radius: 6px;
@@ -127,12 +127,12 @@ a {
 }
 
 pre {
-    background: #0b1117;
-    color: #eaf6ff;
+    background: #0B0812;
+    color: #F3E8FF;
     padding: 15px;
     border-radius: 8px;
     overflow-x: auto;
-    border-left: 3px solid #00d8ff;
+    border-left: 3px solid #C084FC;
 }
 
 code {
@@ -140,7 +140,7 @@ code {
 }
 
 .nota {
-    background: #243b4a;
+    background: #38264D;
     padding: 12px;
     border-radius: 6px;
 }
@@ -148,11 +148,51 @@ code {
 footer {
     text-align: center;
     padding: 18px;
-    color: #c8d3da;
-    border-top: 1px solid #304654;
+    color: #C9BED8;
+    border-top: 1px solid #49315F;
 }
 
-@media (max-width: 600px) {
+/* Barra lateral */
+@media (min-width: 900px) {
+    body {
+        padding-left: 180px;
+    }
+
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 180px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: none;
+        border-right: 3px solid #C084FC;
+    }
+
+    header h1 {
+        font-size: 24px;
+        overflow-wrap: anywhere;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    header .voltar {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 899px) {
     main {
         width: 94%;
     }
