@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Hub de CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendendo CSS Grid</h1>
+        <p>Organizando elementos em linhas e colunas</p>
+        <a class="voltar" href="index.html">Voltar ao Hub</a>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>O que é CSS Grid?</h2>
+            <p>CSS Grid é um recurso do CSS que permite organizar elementos em uma grade, usando linhas e colunas. Ele é útil para criar layouts de páginas, galerias de imagens e conjuntos de cartões.</p>
+            <p>Para começar, usamos <code>display: grid;</code> no contêiner dos elementos.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>1. Exemplo básico</h2>
+            <p>Veja seis elementos organizados em três colunas.</p>
+            <div class="exemplo-grid">
+                <div class="item-grid">1</div>
+                <div class="item-grid">2</div>
+                <div class="item-grid">3</div>
+                <div class="item-grid">4</div>
+                <div class="item-grid">5</div>
+                <div class="item-grid">6</div>
+            </div>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}</code></pre>
+            <p><code>grid-template-columns</code> define as colunas. <code>repeat(3, 1fr)</code> cria três colunas com o mesmo tamanho. <code>gap</code> define o espaço entre os itens.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>2. Linhas e colunas</h2>
+            <p>As colunas organizam os itens na vertical e as linhas organizam os itens na horizontal. Quando uma linha fica cheia, os próximos itens passam para a linha seguinte.</p>
+            <p>Também podemos definir linhas usando <code>grid-template-rows</code>.</p>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}</code></pre>
+            <p>Nesse exemplo, a grade tem duas colunas iguais e duas linhas de 100 pixels.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>3. Espaçamento entre os itens</h2>
+            <p>A propriedade <code>gap</code> cria espaço entre linhas e colunas.</p>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}</code></pre>
+        </section>
+
+        <section class="conteudo">
+            <h2>4. Onde usar Grid?</h2>
+            <ul>
+                <li>Galerias de fotos.</li>
+                <li>Cartões de produtos.</li>
+                <li>Divisão da página em áreas.</li>
+                <li>Organização de conteúdo em linhas e colunas.</li>
+            </ul>
+            <p class="nota">Dica: Flexbox costuma ser prático para organizar elementos em uma direção. Grid é muito útil quando precisamos controlar linhas e colunas ao mesmo tempo.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Atividade prática</h2>
+            <p>Altere <code>repeat(3, 1fr)</code> para <code>repeat(2, 1fr)</code> no exemplo e veja como os seis itens passam a ocupar duas colunas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de estudo de CSS</p>
+    </footer>
+</body>
+</html>

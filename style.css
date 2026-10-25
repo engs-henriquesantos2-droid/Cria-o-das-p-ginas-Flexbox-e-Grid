@@ -1,0 +1,163 @@
+/* Estilos gerais do site */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101820;
+    color: #f2f5f7;
+    line-height: 1.6;
+}
+
+header {
+    background: #172b3a;
+    text-align: center;
+    padding: 28px 15px;
+    border-bottom: 3px solid #00d8ff;
+}
+
+header h1 {
+    margin: 0;
+    color: #00d8ff;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.introducao, .cartao, .conteudo {
+    background: #1b2a36;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #304654;
+}
+
+h2 {
+    color: #00d8ff;
+    margin-top: 0;
+}
+
+.cartoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    flex: 1;
+    min-width: 250px;
+}
+
+.botao, .voltar {
+    display: inline-block;
+    background: #00d8ff;
+    color: #101820;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover, .voltar:hover {
+    background: #8beeff;
+}
+
+a {
+    color: #8beeff;
+}
+
+.voltar {
+    margin-top: 10px;
+}
+
+.exemplo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #101820;
+    padding: 15px;
+    min-height: 150px;
+    border: 1px dashed #8beeff;
+    border-radius: 8px;
+}
+
+.caixa {
+    background: #00d8ff;
+    color: #101820;
+    width: 75px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.exemplo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #101820;
+    padding: 15px;
+    border: 1px dashed #8beeff;
+    border-radius: 8px;
+}
+
+.item-grid {
+    background: #00d8ff;
+    color: #101820;
+    text-align: center;
+    padding: 20px 5px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+pre {
+    background: #0b1117;
+    color: #eaf6ff;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border-left: 3px solid #00d8ff;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+.nota {
+    background: #243b4a;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    color: #c8d3da;
+    border-top: 1px solid #304654;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    .exemplo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

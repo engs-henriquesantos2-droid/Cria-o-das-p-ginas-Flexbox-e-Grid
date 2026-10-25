@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Hub de CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendendo Flexbox</h1>
+        <p>Uma forma de organizar elementos com CSS</p>
+        <a class="voltar" href="index.html">Voltar ao Hub</a>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>O que é Flexbox?</h2>
+            <p>Flexbox é um recurso do CSS usado para organizar elementos dentro de um contêiner. Ele ajuda a colocar caixas em uma linha ou coluna e controlar o alinhamento e o espaço entre elas.</p>
+            <p>Para usar Flexbox, colocamos <code>display: flex;</code> no elemento que contém as caixas.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>1. Exemplo básico</h2>
+            <p>As três caixas abaixo estão lado a lado porque o contêiner usa <code>display: flex;</code>.</p>
+            <div class="exemplo-flex">
+                <div class="caixa">1</div>
+                <div class="caixa">2</div>
+                <div class="caixa">3</div>
+            </div>
+            <pre><code>.container {
+    display: flex;
+}</code></pre>
+        </section>
+
+        <section class="conteudo">
+            <h2>2. Direção dos elementos</h2>
+            <p>A propriedade <code>flex-direction</code> define a direção das caixas.</p>
+            <ul>
+                <li><code>row</code>: coloca as caixas em uma linha.</li>
+                <li><code>column</code>: coloca as caixas em uma coluna.</li>
+            </ul>
+            <pre><code>.container {
+    display: flex;
+    flex-direction: row;
+}</code></pre>
+        </section>
+
+        <section class="conteudo">
+            <h2>3. Alinhamento e espaço</h2>
+            <p>Algumas propriedades importantes:</p>
+            <ul>
+                <li><code>justify-content</code>: organiza os elementos no eixo principal, por exemplo, no começo, no centro ou com espaço entre eles.</li>
+                <li><code>align-items</code>: alinha os elementos no eixo transversal.</li>
+                <li><code>gap</code>: cria um espaço entre as caixas.</li>
+            </ul>
+            <div class="exemplo-flex">
+                <div class="caixa">A</div>
+                <div class="caixa">B</div>
+                <div class="caixa">C</div>
+            </div>
+            <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}</code></pre>
+        </section>
+
+        <section class="conteudo">
+            <h2>4. Quebra de linha</h2>
+            <p>Com <code>flex-wrap: wrap;</code>, as caixas podem passar para a linha de baixo quando não existe espaço suficiente.</p>
+            <pre><code>.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}</code></pre>
+            <p class="nota">Dica: Flexbox é muito útil para menus, botões, barras de navegação e para alinhar elementos.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Atividade prática</h2>
+            <p>Crie um contêiner com três caixas. Experimente mudar <code>justify-content</code> para <code>center</code>, <code>space-between</code> e <code>flex-end</code>. Observe como as caixas mudam de posição.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de estudo de CSS</p>
+    </footer>
+</body>
+</html>
